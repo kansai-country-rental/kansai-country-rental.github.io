@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Meta-WebIndexer
+Allow: /
+
+# Update the Sitemap URL below once your GitHub Pages URL is live:
+# Sitemap: https://<your-github-username>.github.io/sitemap.xml
