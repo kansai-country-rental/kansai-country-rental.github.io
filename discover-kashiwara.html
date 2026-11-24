@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="images/logo_icon.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,23 +46,22 @@
 </head>
 <body class="font-sans antialiased selection:bg-cedar selection:text-white">
   <header class="sticky top-0 z-40 bg-washi/95 backdrop-blur border-b border-stone-200/80">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between md:justify-start gap-3 md:gap-8">
       <a href="index.html" class="flex items-center gap-2.5 min-w-0">
-        <span class="w-8 h-8 rounded-lg bg-cedar text-white flex items-center justify-center font-bold text-sm shrink-0">KC</span>
+        <img src="images/logo_icon.jpg" alt="Kansai Country Rental logo" class="w-10 h-10 rounded-lg object-cover shrink-0 shadow-sm border border-stone-200" />
         <div class="truncate">
           <div class="font-semibold text-sm sm:text-base text-ink leading-tight truncate">Kansai Country Rental</div>
           <div class="text-[11px] text-muted leading-tight truncate">Direct-Owner Homes · Osaka &amp; Nara</div>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="index.html" class="text-muted hover:text-cedar transition-colors">All Properties</a>
-        <a href="aotani-apartment.html" class="text-muted hover:text-cedar transition-colors">Aotani Apartment</a>
-        <a href="discover-kashiwara.html" class="text-cedar font-semibold">Discover Kashiwara</a>
-      </nav>
-
-      <div class="flex items-center gap-2 shrink-0">
-        <a href="aotani-apartment.html#contact" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs sm:text-sm font-medium transition-colors">
+      <div class="flex items-center gap-2.5 shrink-0">
+        <nav class="hidden md:flex items-center gap-2.5">
+          <a href="aotani-apartment.html" class="px-3.5 py-2 rounded-lg text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Aotani Apartment</a>
+          <a href="discover-kashiwara.html" class="px-3.5 py-2 rounded-lg text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap bg-cedarDark ring-2 ring-cedar/30">Discover Kashiwara</a>
+          <a href="inquire.html" class="px-3.5 py-2 rounded-lg text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Inquire / 問合せ</a>
+        </nav>
+        <a href="inquire.html" class="md:hidden px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs font-medium transition-colors whitespace-nowrap">
           Inquire / 問合せ
         </a>
         <button id="mobileMenuBtn" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg border border-stone-300 text-ink hover:bg-sand">
@@ -72,21 +72,15 @@
       </div>
     </div>
 
-    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-4 py-3 space-y-2 text-sm font-medium text-ink">
-      <a href="index.html" class="block py-1.5 hover:text-cedar">All Properties</a>
-      <a href="aotani-apartment.html" class="block py-1.5 hover:text-cedar">Aotani Apartment</a>
-      <a href="discover-kashiwara.html" class="block py-1.5 hover:text-cedar">Discover Kashiwara</a>
-      <a href="aotani-apartment.html#contact" class="block py-1.5 hover:text-cedar">Inquire / 問合せ</a>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-4 py-3 flex flex-col gap-2 text-sm font-medium">
+      <a href="aotani-apartment.html" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Aotani Apartment</a>
+      <a href="discover-kashiwara.html" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Discover Kashiwara</a>
+      <a href="inquire.html" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Inquire / 問合せ</a>
     </div>
   </header>
 
   <main>
     <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-10 sm:pt-12">
-      <div class="mb-4">
-        <a href="aotani-apartment.html" class="inline-flex items-center text-xs sm:text-sm font-medium text-cedar hover:underline">
-          ← Back to Aotani Apartment
-        </a>
-      </div>
 
       <div class="bg-cedar text-white rounded-3xl overflow-hidden shadow-sm">
         <div class="relative h-56 sm:h-72 bg-cedarDark">

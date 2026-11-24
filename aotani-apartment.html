@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="images/logo_icon.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,23 +78,22 @@
 </head>
 <body class="font-sans antialiased selection:bg-cedar selection:text-white">
   <header class="sticky top-0 z-40 bg-washi/95 backdrop-blur border-b border-stone-200/80">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between md:justify-start gap-3 md:gap-8">
       <a href="index.html" class="flex items-center gap-2.5 min-w-0">
-        <span class="w-8 h-8 rounded-lg bg-cedar text-white flex items-center justify-center font-bold text-sm shrink-0">KC</span>
+        <img src="images/logo_icon.jpg" alt="Kansai Country Rental logo" class="w-10 h-10 rounded-lg object-cover shrink-0 shadow-sm border border-stone-200" />
         <div class="truncate">
           <div class="font-semibold text-sm sm:text-base text-ink leading-tight truncate">Kansai Country Rental</div>
           <div class="text-[11px] text-muted leading-tight truncate">Direct-Owner Homes · Osaka &amp; Nara</div>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="index.html" class="text-muted hover:text-cedar transition-colors">All Properties</a>
-        <a href="aotani-apartment.html" class="text-cedar font-semibold">Aotani Apartment</a>
-        <a href="discover-kashiwara.html" class="text-muted hover:text-cedar transition-colors">Discover Kashiwara</a>
-      </nav>
-
-      <div class="flex items-center gap-2 shrink-0">
-        <a href="aotani-apartment.html#contact" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs sm:text-sm font-medium transition-colors">
+      <div class="flex items-center gap-2.5 shrink-0">
+        <nav class="hidden md:flex items-center gap-2.5">
+          <a href="aotani-apartment.html" class="px-3.5 py-2 rounded-lg text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap bg-cedarDark ring-2 ring-cedar/30">Aotani Apartment</a>
+          <a href="discover-kashiwara.html" class="px-3.5 py-2 rounded-lg text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Discover Kashiwara</a>
+          <a href="inquire.html" class="px-3.5 py-2 rounded-lg text-white text-xs sm:text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Inquire / 問合せ</a>
+        </nav>
+        <a href="inquire.html" class="md:hidden px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs font-medium transition-colors whitespace-nowrap">
           Inquire / 問合せ
         </a>
         <button id="mobileMenuBtn" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg border border-stone-300 text-ink hover:bg-sand">
@@ -104,11 +104,10 @@
       </div>
     </div>
 
-    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-4 py-3 space-y-2 text-sm font-medium text-ink">
-      <a href="index.html" class="block py-1.5 hover:text-cedar">All Properties</a>
-      <a href="aotani-apartment.html" class="block py-1.5 hover:text-cedar">Aotani Apartment</a>
-      <a href="discover-kashiwara.html" class="block py-1.5 hover:text-cedar">Discover Kashiwara</a>
-      <a href="aotani-apartment.html#contact" class="block py-1.5 hover:text-cedar">Inquire / 問合せ</a>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-4 py-3 flex flex-col gap-2 text-sm font-medium">
+      <a href="aotani-apartment.html" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Aotani Apartment</a>
+      <a href="discover-kashiwara.html" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Discover Kashiwara</a>
+      <a href="inquire.html" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Inquire / 問合せ</a>
     </div>
   </header>
 
@@ -238,7 +237,7 @@
           <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/65 text-white text-[11px] font-medium">Upper Landing & Stairs</span>
         </button>
         <button type="button" data-photo-index="1" class="photo-card group relative overflow-hidden rounded-xl border border-stone-200 bg-stone-100 aspect-[4/3] text-left">
-          <img src="images/02_kitchen.jpg" alt="1F Kitchen — Functional cooking area with gas stove" class="w-full h-full object-cover" />
+          <img src="images/02_kitchen.jpg" alt="1F Kitchen — Functional cooking area with IH stove" class="w-full h-full object-cover" />
           <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/65 text-white text-[11px] font-medium">1F Kitchen</span>
         </button>
         <button type="button" data-photo-index="2" class="photo-card group relative overflow-hidden rounded-xl border border-stone-200 bg-stone-100 aspect-[4/3] text-left">
@@ -329,6 +328,41 @@
               <div class="font-medium text-ink">Flexible month-to-month or 1-year contract (30-day notice). Direct bilingual owners (foreigners welcome / 外国人歓迎). Paid monthly parking available directly across the street at Aotani Golf Garden.</div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Location & Google Map Section -->
+    <section id="map" class="max-w-5xl mx-auto px-4 sm:px-6 pt-12">
+      <div class="bg-white rounded-3xl border border-stone-200 p-6 sm:p-8 shadow-sm space-y-5">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Location &amp; Map · アクセス・地図</span>
+            <h2 class="text-2xl font-bold text-ink mt-1">559-9-2 Aotani, Kashiwara-shi, Osaka</h2>
+            <p class="text-sm text-muted mt-1">
+              2-minute walk (100m) from <strong>JR Kawachi-Katakami Station (JR Yamatoji Line / JR大和路線 河内堅上駅)</strong> · Paid monthly parking across the street at Aotani Golf Garden.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=34.573601,135.661901" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs sm:text-sm font-semibold transition-colors">
+              Open in Google Maps ↗
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kawachi-Katakami+Station+Kashiwara+Osaka&query_place_id=ChIJu9mGZaQoAWARCcd1VDlOkGY" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-sand hover:bg-stone-200 text-ink text-xs sm:text-sm font-semibold border border-stone-300 transition-colors">
+              JR Station Pin ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full overflow-hidden rounded-2xl border border-stone-200 bg-sand/40">
+          <iframe
+            title="Google Map of Aotani Apartment, 559-9-2 Aotani, Kashiwara-shi, Osaka"
+            src="https://maps.google.com/maps?q=34.573601,135.661901&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-72 sm:h-96 border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </section>
@@ -427,7 +461,7 @@
     (function () {
       const photoCaptions = [
         'Aotani Apartment — Bright 2F landing & staircase',
-        '1F Kitchen — Functional cooking area with gas stove',
+        '1F Kitchen — Functional cooking area with IH stove',
         '1F Living Room — Spacious ground-floor living area (44 m²)',
         '1F Bathroom — Clean modern unit bath & shower',
         '1F Toilet — Private bathroom facility',
