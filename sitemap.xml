@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <!-- Replace with your live GitHub Pages URL or custom domain once published -->
-    <loc>https://YOUR-USERNAME.github.io/kansai-country-rental/</loc>
+    <loc>https://kansai-country-rental.github.io/</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

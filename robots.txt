@@ -16,5 +16,4 @@ Allow: /
 User-agent: Meta-WebIndexer
 Allow: /
 
-# Update the Sitemap URL below once your GitHub Pages URL is live:
-# Sitemap: https://<your-github-username>.github.io/sitemap.xml
+Sitemap: https://kansai-country-rental.github.io/sitemap.xml
