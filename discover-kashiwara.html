@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans JP', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            washi: '#FAF8F4',
+            sand: '#F1ECE3',
+            cedar: '#1F4E3D',
+            cedarDark: '#16382C',
+            moss: '#3A6B56',
+            clay: '#C26D4A',
+            ink: '#1E2421',
+            muted: '#5A6560',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #FAF8F4; color: #1E2421; }
+    .photo-card img { transition: transform 0.35s ease; }
+    .photo-card:hover img { transform: scale(1.03); }
+    .toast-enter { animation: fadeSlideUp 0.25s ease forwards; }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translate(-50%, 10px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+  </style>
+  <title>Discover Kashiwara — Countryside Living Close to Osaka | Kansai Country Rental</title>
+  <meta name="description" content="Explore life in Kashiwara-shi, Osaka: ~25-minute JR Yamatoji Line train to Tennoji, car-free Tatsuta Kodo cycling to Oji and Kokubu supermarkets, nearby parks, and official Kashiwara City guides." />
+  <meta name="keywords" content="Discover Kashiwara, Kashiwara-shi Osaka living guide, JR Kawachi-Katakami Station, Tatsuta Kodo cycling, Kamenose, Oji supermarkets, 柏原市 移住, 柏原市青谷, 龍田古道, 亀の瀬" />
+</head>
+<body class="font-sans antialiased selection:bg-cedar selection:text-white">
+  <header class="sticky top-0 z-40 bg-washi/95 backdrop-blur border-b border-stone-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2.5 min-w-0">
+        <span class="w-8 h-8 rounded-lg bg-cedar text-white flex items-center justify-center font-bold text-sm shrink-0">KC</span>
+        <div class="truncate">
+          <div class="font-semibold text-sm sm:text-base text-ink leading-tight truncate">Kansai Country Rental</div>
+          <div class="text-[11px] text-muted leading-tight truncate">Direct-Owner Homes · Osaka &amp; Nara</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-muted hover:text-cedar transition-colors">All Properties</a>
+        <a href="aotani-apartment.html" class="text-muted hover:text-cedar transition-colors">Aotani Apartment</a>
+        <a href="discover-kashiwara.html" class="text-cedar font-semibold">Discover Kashiwara</a>
+      </nav>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="aotani-apartment.html#contact" class="px-3.5 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs sm:text-sm font-medium transition-colors">
+          Inquire / 問合せ
+        </a>
+        <button id="mobileMenuBtn" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg border border-stone-300 text-ink hover:bg-sand">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-4 py-3 space-y-2 text-sm font-medium text-ink">
+      <a href="index.html" class="block py-1.5 hover:text-cedar">All Properties</a>
+      <a href="aotani-apartment.html" class="block py-1.5 hover:text-cedar">Aotani Apartment</a>
+      <a href="discover-kashiwara.html" class="block py-1.5 hover:text-cedar">Discover Kashiwara</a>
+      <a href="aotani-apartment.html#contact" class="block py-1.5 hover:text-cedar">Inquire / 問合せ</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-10 sm:pt-12">
+      <div class="mb-4">
+        <a href="aotani-apartment.html" class="inline-flex items-center text-xs sm:text-sm font-medium text-cedar hover:underline">
+          ← Back to Aotani Apartment
+        </a>
+      </div>
+
+      <div class="bg-cedar text-white rounded-3xl overflow-hidden shadow-sm">
+        <div class="relative h-56 sm:h-72 bg-cedarDark">
+          <img src="images/10_view.jpg" alt="Green foothills and countryside view in Aotani, Kashiwara-shi, Osaka" class="w-full h-full object-cover opacity-80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cedar via-cedar/40 to-transparent"></div>
+          <div class="absolute bottom-5 left-6 right-6">
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-200">Local Area Guide · 柏原市エリアガイド</span>
+            <h1 class="text-2xl sm:text-4xl font-bold mt-1 leading-tight">
+              Discover Kashiwara — Countryside Living Close to Osaka
+            </h1>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-10 space-y-8">
+          <p class="text-sm sm:text-base text-emerald-50/95 leading-relaxed max-w-3xl">
+            Experience a quieter side of Osaka in Kashiwara, where green mountains, local history, and peaceful neighbourhoods meet convenient access to the city. From Aotani, you can step onto the <strong>JR Yamatoji Line (JR大和路線 河内堅上駅)</strong> in two minutes for a ~25-minute direct ride to Tennoji, or cycle car-free along the Yamato River and Japan Heritage trails.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/15 space-y-2">
+              <div class="font-semibold text-emerald-200 text-xs uppercase tracking-wide">East to Sango &amp; Oji (~4.5 km)</div>
+              <p class="text-emerald-50/90 leading-relaxed text-xs sm:text-sm">
+                Cross to the north bank at JR Kawachi-Katakami Station and ride the paved Japan Heritage <strong>Tatsuta Kodo (龍田古道)</strong> through Kamenose and Toge into Sango (~2.4 km), then along the Yamato River across Tamon Bridge to JR Oji Station (<strong>Seiyu Oji</strong>, <strong>Super Yaohiko</strong>, <strong>Lucky Oji</strong>)—avoiding Route 25 traffic.
+              </p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/15 space-y-2">
+              <div class="font-semibold text-emerald-200 text-xs uppercase tracking-wide">West to Kawachi-Kokubu (~3.6 km)</div>
+              <p class="text-emerald-50/90 leading-relaxed text-xs sm:text-sm">
+                Flat, easy downstream ride along Prefectural Route 183 (~3.6–4.2 km) to everyday supermarkets and shopping: <strong>Life Kokubu</strong>, <strong>Shokuhinkan Apro Kokubu</strong>, and <strong>Gyomu Super Kashiwara Katayama</strong>.
+              </p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/15 space-y-2">
+              <div class="font-semibold text-emerald-200 text-xs uppercase tracking-wide">Nearby Parks &amp; Mountain Trails</div>
+              <p class="text-emerald-50/90 leading-relaxed text-xs sm:text-sm">
+                Kamenose / Tatsuta Kodo trails (~1 km), Tatsuta Kodo Satoyama Park (~2 km uphill), Tamateyama Park (~4 km west), and Yamatogawa Kasenjiki Ryokuchi riverside park (~4.5 km west).
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-white/15">
+            <div class="text-xs font-semibold uppercase tracking-wider text-emerald-200 mb-3">
+              Official Kashiwara City Resources (Opens in New Tab)
+            </div>
+            <div class="flex flex-wrap gap-2.5 text-xs sm:text-sm">
+              <a href="https://www.city.kashiwara.lg.jp/docs/2016092300018/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-white text-cedar font-medium hover:bg-emerald-50 transition-colors">
+                Kashiwara Relocation &amp; Living Guide ↗
+              </a>
+              <a href="https://www.city.kashiwara.lg.jp/category/bunya/machinomidokoro/gaiyo/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-white/15 text-white border border-white/25 hover:bg-white/25 transition-colors">
+                Local Attractions (まちの魅力) ↗
+              </a>
+              <a href="https://kashiwaratourism.com/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-white/15 text-white border border-white/25 hover:bg-white/25 transition-colors">
+                Kashiwara Microtourism Council ↗
+              </a>
+              <a href="https://www.city.kashiwara.lg.jp/docs/2025030400024/file_contents/kashiwara-map_JP.pdf" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-white/15 text-white border border-white/25 hover:bg-white/25 transition-colors">
+                Official Sightseeing Map (JP PDF) ↗
+              </a>
+              <a href="https://www.city.kashiwara.lg.jp/docs/2016041100010/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-white/15 text-white border border-white/25 hover:bg-white/25 transition-colors">
+                Multilingual Guide Maps (EN/ZH/KO) ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-3">
+            <a href="aotani-apartment.html" class="px-5 py-3 rounded-xl bg-white hover:bg-emerald-50 text-cedar font-semibold text-sm transition-colors">
+              View Aotani Apartment (¥50,000/mo) →
+            </a>
+            <a href="index.html" class="px-5 py-3 rounded-xl bg-white/15 hover:bg-white/25 text-white border border-white/25 font-semibold text-sm transition-colors">
+              See All Four Properties
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-stone-200 bg-sand/50 py-8 text-center text-xs text-muted px-4">
+    <div class="max-w-5xl mx-auto space-y-1">
+      <div class="font-semibold text-ink">Kansai Country Rental · Aotani, Kashiwara-shi, Osaka (大阪府柏原市青谷)</div>
+      <div>Direct-from-owner bilingual rentals near JR Kawachi-Katakami Station (JR大和路線 河内堅上駅)</div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var btn = document.getElementById('mobileMenuBtn');
+      var menu = document.getElementById('mobileMenu');
+      if (btn && menu) {
+        btn.addEventListener('click', function () {
+          menu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
