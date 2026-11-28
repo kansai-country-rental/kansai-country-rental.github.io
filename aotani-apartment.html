@@ -6,25 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['Inter', 'Noto Sans JP', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            washi: '#FAF8F4',
-            sand: '#F1ECE3',
-            cedar: '#1F4E3D',
-            cedarDark: '#16382C',
-            moss: '#3A6B56',
-            clay: '#C26D4A',
-            ink: '#1E2421',
-            muted: '#5A6560',
-          }
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: { washi: '#FAF8F4', sand: '#F1ECE3', cedar: '#1F4E3D', cedarDark: '#16382C', moss: '#3A6B56', clay: '#C26D4A', ink: '#1E2421', muted: '#5A6560' }
         }
       }
     };
@@ -35,21 +24,16 @@
     .photo-card img { transition: transform 0.35s ease; }
     .photo-card:hover img { transform: scale(1.03); }
     .toast-enter { animation: fadeSlideUp 0.25s ease forwards; }
-    @keyframes fadeSlideUp {
-      from { opacity: 0; transform: translate(-50%, 10px); }
-      to { opacity: 1; transform: translate(-50%, 0); }
-    }
+    @keyframes fadeSlideUp { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
   </style>
-  <title>Aotani Apartment — Kansai Country Rental | ¥50,000/mo 85m² 2LDK near JR Kawachi-Katakami Station, Kashiwara, Osaka</title>
-  <meta name="description" content="Working in Osaka/Nara but prefer a more spacious, affordable rural place to live? 85 m² 2-story apartment in Aotani, Kashiwara-shi, Osaka. 2-min walk to JR Kawachi-Katakami Station (~25 mins to Tennoji). ¥50,000/month, ¥0 key money, ¥0 agency fee, no guarantor, Pets OK with conditions." />
-  <meta name="keywords" content="Kansai Country Rental, Aotani Apartment, Kashiwara-shi Osaka rental, JR Kawachi-Katakami Station, JR Yamatoji Line, no key money, no guarantor, room share Osaka, pets OK Osaka, 柏原市青谷 賃貸, JR大和路線 河内堅上駅 徒歩2分, 家賃5万円 礼金なし, 仲介手数料無料, 保証人不要, ルームシェア可, 外国人歓迎" />
+  <title>Aotani Apartment — Kansai Country Rental | ¥50,000/mo 85m² near JR Kawachi-Katakami Station, Kashiwara, Osaka</title>
+  <meta name="description" content="Working in Osaka/Nara but prefer a more spacious, affordable rural place to live? 85 m² 2-story apartment in Aotani, Kashiwara-shi, Osaka. 1-min walk (~100m) to JR Kawachi-Katakami Station. ¥50,000/month + utilities (sharing OK, ¥25,000/month per person), ¥0 key money, ¥0 agency fee, no guarantor, Pets OK with conditions." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Apartment",
     "name": "Kansai Country Rental — Aotani Apartment, Kashiwara-shi, Osaka",
-    "alternateName": "柏原市青谷 賃貸 アオタニ・アパートメント",
-    "description": "Spacious 85 m² 2-story apartment rental in Kashiwara-shi, Osaka, 2-minute walk from JR Kawachi-Katakami Station (JR Yamatoji Line / JR大和路線 河内堅上駅, ~25 mins direct to Tennoji). Direct from bilingual owners: 50,000 JPY/month (25,000 JPY/person shared), 1-month refundable deposit, 0 key money, 0 brokerage fee, no guarantor required, Pets OK with conditions.",
+    "description": "Spacious 85 m² 2-story apartment in Kashiwara-shi, Osaka, 1-minute walk (~100m) from JR Kawachi-Katakami Station (JR Yamatoji Line). Direct from owners: 50,000 JPY/month + utilities (sharing OK, 25,000 JPY/month per person for 2 sharing), 1-month refundable deposit, 0 key money, 0 brokerage fee, no guarantor required, Pets OK with conditions.",
     "floorSize": {
       "@type": "QuantitativeValue",
       "value": 85,
@@ -57,12 +41,11 @@
     },
     "numberOfRooms": 4,
     "numberOfBedrooms": 2,
-    "petsAllowed": "Pets OK with conditions (ペット相談可・条件あり)",
+    "petsAllowed": "Pets OK with conditions",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "559-9-2 Aotani",
-      "addressLocality": "Kashiwara-shi",
-      "addressRegion": "Osaka",
+      "addressLocality": "Aotani, Kashiwara City",
+      "addressRegion": "Osaka Prefecture",
       "postalCode": "582-0014",
       "addressCountry": "JP"
     },
@@ -71,7 +54,7 @@
       "price": "50000",
       "priceCurrency": "JPY",
       "availability": "https://schema.org/InStock",
-      "description": "50,000 JPY/month + utilities (25,000 JPY/person for 2 sharing). 50,000 JPY refundable deposit. 0 JPY key money, 0 JPY agency fee, no guarantor required."
+      "description": "50,000 JPY/month + utilities (sharing OK, 25,000 JPY/month per person for 2 sharing). 50,000 JPY refundable deposit. 0 JPY key money, 0 JPY agency fee, no guarantor required."
     }
   }
   </script>
@@ -91,7 +74,7 @@
         <nav class="hidden md:flex items-center gap-2.5">
           <a href="aotani-apartment.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedarDark ring-2 ring-cedar/30">Aotani Apartment</a>
           <a href="discover-kashiwara.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Discover Kashiwara</a>
-          <a href="inquire.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Inquire / 問合せ</a>
+          <a href="inquire.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Inquire</a>
         </nav>
         <button id="mobileMenuBtn" type="button" aria-label="Open menu" class="md:hidden p-2 rounded-lg border border-stone-300 text-ink hover:bg-sand">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -104,126 +87,83 @@
     <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-3.5 py-3 flex flex-col gap-2 text-sm font-medium shadow-sm">
       <a href="aotani-apartment.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Aotani Apartment</a>
       <a href="discover-kashiwara.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Discover Kashiwara</a>
-      <a href="inquire.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Inquire / 問合せ</a>
+      <a href="inquire.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Inquire</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-5 pb-8 sm:pt-12 sm:pb-14">
-      <div class="grid lg:grid-cols-12 gap-5 sm:gap-8 items-center">
-        <div class="lg:col-span-6 space-y-4">
-          <h1 class="text-2xl sm:text-4xl font-bold tracking-tight text-ink leading-tight">
-            Aotani Apartment
-          </h1>
+    <!-- Clean Hero Intro & Rent Card (No duplicate photo, no extra CTA buttons) -->
+    <section class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-5 pb-6 sm:pt-10 sm:pb-8">
+      <div class="space-y-4">
+        <h1 class="text-2xl sm:text-4xl font-bold tracking-tight text-ink leading-tight">
+          Aotani Apartment
+        </h1>
 
-          <p class="text-sm sm:text-lg font-semibold text-cedar leading-snug">
-            Working in Osaka/Nara but prefer a more spacious, affordable rural place to live?
-          </p>
+        <p class="text-sm sm:text-lg font-semibold text-cedar leading-snug">
+          Working in Osaka/Nara but prefer a more spacious, affordable rural place to live?
+        </p>
 
-          <p class="text-sm sm:text-base text-muted leading-relaxed">
-            We have a spacious, comfortable apartment in the quiet green foothills between Osaka and Nara, just a <strong class="text-ink">2-minute walk (100m)</strong> from
-            <strong class="text-ink">JR Kawachi-Katakami Station (JR Yamatoji Line / JR大和路線 河内堅上駅)</strong> in Kashiwara-shi, Osaka.
-            Direct ~25-minute train to Tennoji, 2 stops to Oji shopping, and direct bilingual owners with zero agency fees.
-          </p>
+        <p class="text-sm sm:text-base text-muted leading-relaxed max-w-3xl">
+          We have a spacious, comfortable apartment in the quiet green foothills between Osaka and Nara, just a <strong class="text-ink">1-minute walk (approx. 100m)</strong> from
+          <strong class="text-ink">JR Kawachi-Katakami Station (JR Yamatoji Line)</strong> in <strong class="text-ink">Kashiwara City, Osaka Prefecture</strong> — direct from the owners with zero agency fees.
+        </p>
 
-          <!-- Interactive Cost Card (Solo vs. Room-Share Toggle) -->
-          <div class="bg-white rounded-xl sm:rounded-2xl border border-stone-200/90 p-3.5 sm:p-5 shadow-sm space-y-3 sm:space-y-4">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-semibold uppercase tracking-wider text-muted">Rent Estimator / 家賃目安</span>
-              <div class="inline-flex rounded-lg bg-sand p-1 text-xs font-medium" role="group" aria-label="Occupancy mode">
-                <button id="modeSoloBtn" type="button" class="px-2.5 sm:px-3 py-1.5 rounded-md bg-cedar text-white shadow-sm transition-all text-[11px] sm:text-xs">
-                  1 Person / Couple
-                </button>
-                <button id="modeShareBtn" type="button" class="px-2.5 sm:px-3 py-1.5 rounded-md text-muted hover:text-ink transition-all text-[11px] sm:text-xs">
-                  2 People Sharing
-                </button>
-              </div>
-            </div>
-
-            <div class="flex items-baseline gap-2 flex-wrap">
-              <span id="rentHeadline" class="text-2xl sm:text-4xl font-bold text-cedar">¥50,000</span>
-              <span id="rentUnit" class="text-sm text-muted font-medium">/ month + utilities</span>
-            </div>
-            <p id="rentNote" class="text-xs sm:text-sm text-muted">
-              Total apartment rent: ¥50,000/month. Move-in upfront: ¥50,000 first month + ¥50,000 refundable deposit (¥0 key money, ¥0 brokerage, ¥0 guarantor).
-            </p>
-
-            <div class="grid grid-cols-3 gap-2 pt-2 border-t border-stone-100 text-center">
-              <div class="bg-washi rounded-lg py-2 px-1">
-                <div class="text-xs font-bold text-cedar">¥0</div>
-                <div class="text-[11px] text-muted">Key Money · 礼金</div>
-              </div>
-              <div class="bg-washi rounded-lg py-2 px-1">
-                <div class="text-xs font-bold text-cedar">¥0</div>
-                <div class="text-[11px] text-muted">Agency Fee · 仲介</div>
-              </div>
-              <div class="bg-washi rounded-lg py-2 px-1">
-                <div class="text-xs font-bold text-cedar">None</div>
-                <div class="text-[11px] text-muted">Guarantor · 保証人</div>
-              </div>
-            </div>
+        <div class="grid sm:grid-cols-2 gap-3 max-w-3xl text-xs sm:text-sm text-muted">
+          <div class="bg-washi rounded-xl border border-stone-200/80 p-3.5">
+            <div class="font-semibold text-ink mb-1.5">Train Times to Major Osaka Hubs</div>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong class="text-ink">Tennoji:</strong> approx. 32 mins (direct local, or transfer at Kyuhoji)</li>
+              <li><strong class="text-ink">JR Namba:</strong> approx. 40 mins direct</li>
+              <li><strong class="text-ink">Osaka / Umeda:</strong> approx. 55 mins (1 transfer)</li>
+            </ul>
           </div>
-
-          <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-2.5 sm:gap-3 pt-1">
-            <a href="#contact" class="px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-cedar hover:bg-cedarDark text-white font-semibold text-xs sm:text-sm text-center transition-colors">
-              Book Viewing / Virtual Tour
-            </a>
-            <a href="#photos" class="px-3 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-white hover:bg-sand text-ink font-semibold text-xs sm:text-sm text-center border border-stone-300 transition-colors">
-              View Photos &amp; Floor Plan
-            </a>
+          <div class="bg-washi rounded-xl border border-stone-200/80 p-3.5">
+            <div class="font-semibold text-ink mb-1.5">Nearby Shopping &amp; Supermarkets</div>
+            <ul class="list-disc pl-4 space-y-1">
+              <li><strong class="text-ink">Oji:</strong> approx. 7 mins direct (2 stops on JR Yamatoji Line)</li>
+              <li><strong class="text-ink">Kawachi-Kokubu:</strong> approx. 15 mins (1 stop to Takaida + walk, or approx. 15 mins by bicycle)</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Hero Image -->
-        <div class="lg:col-span-6">
-          <button type="button" data-photo-index="0" class="photo-card group relative block w-full overflow-hidden rounded-2xl border border-stone-200 shadow-md bg-stone-200 text-left focus:outline-none focus:ring-2 focus:ring-cedar">
-            <img src="images/01_stairs_top.jpg" alt="Aotani Apartment interior in Kashiwara-shi, Osaka" class="w-full h-56 sm:h-96 object-cover" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent p-4 text-white">
-              <div class="text-xs font-medium text-emerald-200">559-9-2 Aotani, Kashiwara-shi, Osaka 582-0014</div>
-              <div class="text-sm font-semibold">Click any photo to open full gallery (10 photos + floor plan)</div>
+        <!-- Clean Rent Summary Card -->
+        <div class="bg-white rounded-xl sm:rounded-2xl border border-stone-200/90 p-4 sm:p-5 shadow-sm space-y-3 max-w-3xl">
+          <div class="flex items-baseline gap-2 flex-wrap">
+            <span class="text-2xl sm:text-3xl font-bold text-cedar">¥50,000</span>
+            <span class="text-sm text-muted font-medium">/ month + utilities</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-ink">
+            Sharing OK — two people would be ¥25,000 / month per person.
+          </p>
+          <p class="text-xs sm:text-sm text-muted">
+            Move-in upfront: ¥50,000 first month + ¥50,000 refundable deposit (¥0 key money, ¥0 brokerage, ¥0 guarantor).
+          </p>
+          <div class="grid grid-cols-3 gap-2 pt-2 border-t border-stone-100 text-center">
+            <div class="bg-washi rounded-lg py-2 px-1">
+              <div class="text-xs font-bold text-cedar">¥0</div>
+              <div class="text-[11px] text-muted">Key Money</div>
             </div>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key Highlights Strip -->
-    <section id="overview" class="bg-sand/70 border-y border-stone-200/80 py-6 sm:py-10">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
-          <div class="bg-white rounded-xl p-3 sm:p-4 border border-stone-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wide text-clay">Space &amp; Layout</div>
-            <div class="text-sm sm:text-lg font-bold text-ink mt-0.5 sm:mt-1">85 m² (915 sq ft)</div>
-            <p class="text-xs text-muted mt-1 leading-relaxed">2-story apartment (1F: 44 m², 2F: 41 m²). 2 separate upstairs bedrooms + 2 smaller adjoining rooms.</p>
-          </div>
-          <div class="bg-white rounded-xl p-3 sm:p-4 border border-stone-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wide text-clay">Station &amp; Commute</div>
-            <div class="text-sm sm:text-lg font-bold text-ink mt-0.5 sm:mt-1">2-Min Walk to JR</div>
-            <p class="text-xs text-muted mt-1 leading-relaxed">JR Kawachi-Katakami (Yamatoji Line). ~25 mins direct to Tennoji; 6 mins (2 stops) to Oji.</p>
-          </div>
-          <div class="bg-white rounded-xl p-3 sm:p-4 border border-stone-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wide text-clay">Privacy &amp; Building</div>
-            <div class="text-sm sm:text-lg font-bold text-ink mt-0.5 sm:mt-1">No Other Tenants</div>
-            <p class="text-xs text-muted mt-1 leading-relaxed">Renovated half of a former university dorm; the other half is our rarely accessed storeroom.</p>
-          </div>
-          <div class="bg-white rounded-xl p-3 sm:p-4 border border-stone-200/80">
-            <div class="text-xs font-semibold uppercase tracking-wide text-clay">Flexible Terms</div>
-            <div class="text-sm sm:text-lg font-bold text-ink mt-0.5 sm:mt-1">Monthly or Yearly</div>
-            <p class="text-xs text-muted mt-1 leading-relaxed">Semi-furnished (as-is), Pets OK with conditions, paid monthly parking across the street.</p>
+            <div class="bg-washi rounded-lg py-2 px-1">
+              <div class="text-xs font-bold text-cedar">¥0</div>
+              <div class="text-[11px] text-muted">Agency Fee</div>
+            </div>
+            <div class="bg-washi rounded-lg py-2 px-1">
+              <div class="text-xs font-bold text-cedar">None</div>
+              <div class="text-[11px] text-muted">Guarantor</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Photo Gallery & Floor Plan -->
-    <section id="photos" class="max-w-5xl mx-auto px-3.5 sm:px-6 py-8 sm:py-12">
-      <div class="flex flex-wrap items-end justify-between gap-3 mb-6">
+    <!-- Photo Gallery & Floor Plan (Directly under intro & rent) -->
+    <section id="photos" class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-2 pb-8 sm:pt-4 sm:pb-12">
+      <div class="flex flex-wrap items-end justify-between gap-3 mb-4 sm:mb-6">
         <div>
-          <h2 class="text-2xl font-bold text-ink">Photos &amp; Floor Plan · 写真・間取り</h2>
-          <p class="text-sm text-muted mt-1">Real photos of Aotani Apartment, the mountain surroundings, and 1F/2F floor plan.</p>
+          <h2 class="text-xl sm:text-2xl font-bold text-ink">Photos &amp; Floor Plan</h2>
+          <p class="text-xs sm:text-sm text-muted mt-1">Click any photo to view full screen.</p>
         </div>
-        <button id="openFloorplanBtn" type="button" class="px-4 py-2 rounded-lg bg-sand hover:bg-stone-200 text-ink text-xs sm:text-sm font-semibold border border-stone-300 transition-colors">
+        <button id="openFloorplanBtn" type="button" class="px-3.5 py-2 rounded-lg bg-sand hover:bg-stone-200 text-ink text-xs sm:text-sm font-semibold border border-stone-300 transition-colors">
           Open Floor Plan (1F &amp; 2F)
         </button>
       </div>
@@ -238,7 +178,7 @@
           <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/65 text-white text-[11px] font-medium">1F Kitchen</span>
         </button>
         <button type="button" data-photo-index="2" class="photo-card group relative overflow-hidden rounded-xl border border-stone-200 bg-stone-100 aspect-[4/3] text-left">
-          <img src="images/03_living.jpg" alt="1F Living Room — Spacious ground-floor living area (44 m²)" class="w-full h-full object-cover" />
+          <img src="images/03_living.jpg" alt="1F Living Room — Spacious ground-floor living area" class="w-full h-full object-cover" />
           <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/65 text-white text-[11px] font-medium">1F Living Room</span>
         </button>
         <button type="button" data-photo-index="3" class="photo-card group relative overflow-hidden rounded-xl border border-stone-200 bg-stone-100 aspect-[4/3] text-left">
@@ -270,91 +210,34 @@
           <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/65 text-white text-[11px] font-medium">Countryside View</span>
         </button>
         <button type="button" data-photo-index="10" class="photo-card group relative overflow-hidden rounded-xl border border-stone-200 bg-white aspect-[4/3] text-left">
-          <img src="images/11_floorplan.jpg" alt="Floor Plan — 1F (44 m²) and 2F (41 m²), total 85 m² (915 sq ft)" class="w-full h-full object-contain p-1" />
+          <img src="images/11_floorplan.jpg" alt="Floor Plan — 1F and 2F, total 85 m² (915 sq ft)" class="w-full h-full object-contain p-1" />
           <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-cedar text-white text-[11px] font-medium">Floor Plan (1F & 2F)</span>
         </button>
       </div>
     </section>
 
-    <!-- Bilingual Quick-Specs Block -->
-    <section id="specs" class="bg-white border-y border-stone-200/80 py-8 sm:py-12">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="mb-6">
-          <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Bilingual Property Summary · 物件概要</span>
-          <h2 class="text-2xl font-bold text-ink mt-1">Aotani Apartment — Full Terms &amp; Details</h2>
-          <p class="text-sm text-muted mt-1">
-            柏原市青谷 賃貸 · JR大和路線 河内堅上駅 徒歩2分 · 家賃5万円 礼金なし・仲介手数料無料・保証人不要 · ルームシェア可・外国人歓迎・ペット相談可
-          </p>
-        </div>
 
-        <div class="grid md:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
-          <div class="rounded-xl bg-washi border border-stone-200/80 p-3.5 sm:p-4 space-y-2.5 sm:space-y-3">
-            <div>
-              <div class="text-xs font-semibold text-muted">Availability Status / 募集状況</div>
-              <div class="font-semibold text-cedar">Available Now (Immediate Move-In) / 即入居可</div>
-            </div>
-            <div>
-              <div class="text-xs font-semibold text-muted">Property Name &amp; Address / 物件名・所在地</div>
-              <div class="font-medium text-ink">Kansai Country Rental — Aotani Apartment<br />559-9-2 Aotani, Kashiwara-shi, Osaka 582-0014 / 大阪府柏原市青谷559-9-2</div>
-            </div>
-            <div>
-              <div class="text-xs font-semibold text-muted">Nearest Station &amp; Commute / 最寄駅・アクセス</div>
-              <div class="font-medium text-ink">2-minute walk (100m) to <strong>JR Kawachi-Katakami Station (JR Yamatoji Line / JR大和路線 河内堅上駅)</strong> — ~25 mins direct to Tennoji (Osaka), easy access to Namba, Umeda &amp; Nara; 2 stops (6 mins) to Oji shopping.</div>
-            </div>
-            <div>
-              <div class="text-xs font-semibold text-muted">Floor Area &amp; Layout / 面積・間取り</div>
-              <div class="font-medium text-ink">85 m² (915 sq ft) 2-Story Apartment (1F: 44 m² kitchen, living room, modern unit bath, genkan; 2F: 41 m² 2 separate medium bedrooms + 2 smaller adjoining rooms). Ideal for 2 people sharing or home office.</div>
-            </div>
-          </div>
-
-          <div class="rounded-xl bg-washi border border-stone-200/80 p-3.5 sm:p-4 space-y-2.5 sm:space-y-3">
-            <div>
-              <div class="text-xs font-semibold text-muted">Monthly Rent / 家賃</div>
-              <div class="font-semibold text-ink">¥50,000 / month + utilities (¥25,000 / person if 2 share · ¥0 management fee)</div>
-            </div>
-            <div>
-              <div class="text-xs font-semibold text-muted">Upfront Move-In Costs / 初期費用</div>
-              <div class="font-medium text-ink">1-month refundable security deposit (¥50,000) ONLY — <strong>¥0 Key Money (礼金0円), ¥0 Brokerage Fee (仲介手数料0円), ¥0 Guarantor Fee (保証人・保証会社不要)</strong>.</div>
-            </div>
-            <div>
-              <div class="text-xs font-semibold text-muted">Pets, Furnishing &amp; Internet / ペット・設備</div>
-              <div class="font-medium text-ink"><strong>Pets OK with conditions (ペット相談可・条件あり)</strong>. Semi-furnished appliances (fridge, washing machine, AC) provided as-is (現状渡し). Fixed-line internet available upon request.</div>
-            </div>
-            <div>
-              <div class="text-xs font-semibold text-muted">Lease &amp; Parking / 契約・駐車場</div>
-              <div class="font-medium text-ink">Flexible month-to-month or 1-year contract (30-day notice). Direct bilingual owners (foreigners welcome / 外国人歓迎). Paid monthly parking available directly across the street at Aotani Golf Garden.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Location & Google Map Section -->
-    <section id="map" class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-8 sm:pt-12">
+    <!-- Location Section -->
+    <section id="map" class="max-w-5xl mx-auto px-3.5 sm:px-6 pb-8 sm:pb-12">
       <div class="bg-white rounded-2xl sm:rounded-3xl border border-stone-200 p-4 sm:p-8 shadow-sm space-y-4 sm:space-y-5">
         <div class="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Location &amp; Map · アクセス・地図</span>
-            <h2 class="text-2xl font-bold text-ink mt-1">559-9-2 Aotani, Kashiwara-shi, Osaka</h2>
-            <p class="text-sm text-muted mt-1">
-              2-minute walk (100m) from <strong>JR Kawachi-Katakami Station (JR Yamatoji Line / JR大和路線 河内堅上駅)</strong> · Paid monthly parking across the street at Aotani Golf Garden.
+          <div class="max-w-2xl">
+            <h2 class="text-2xl sm:text-3xl font-bold text-ink">Location</h2>
+            <p class="text-xs sm:text-sm text-muted mt-1.5 leading-relaxed">
+              For privacy reasons, the map and link point to <strong>JR Kawachi-Katakami Station</strong>, which is only about <strong>100m (a 1-minute walk)</strong> from the apartment.
             </p>
           </div>
           <div class="flex flex-wrap gap-2">
-            <a href="https://www.google.com/maps/search/?api=1&query=34.573601,135.661901" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs sm:text-sm font-semibold transition-colors">
-              Open in Google Maps ↗
-            </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Kawachi-Katakami+Station+Kashiwara+Osaka&query_place_id=ChIJu9mGZaQoAWARCcd1VDlOkGY" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-sand hover:bg-stone-200 text-ink text-xs sm:text-sm font-semibold border border-stone-300 transition-colors">
-              JR Station Pin ↗
+            <a href="https://www.google.com/maps/search/?api=1&query=Kawachi-Katakami+Station+Kashiwara+Osaka&query_place_id=ChIJu9mGZaQoAWARCcd1VDlOkGY" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cedar hover:bg-cedarDark text-white text-xs sm:text-sm font-semibold transition-colors">
+              Open JR Kawachi-Katakami Station in Google Maps ↗
             </a>
           </div>
         </div>
 
         <div class="w-full overflow-hidden rounded-2xl border border-stone-200 bg-sand/40">
           <iframe
-            title="Google Map of Aotani Apartment, 559-9-2 Aotani, Kashiwara-shi, Osaka"
-            src="https://maps.google.com/maps?q=34.573601,135.661901&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            title="Google Map of JR Kawachi-Katakami Station, Kashiwara City, Osaka Prefecture"
+            src="https://maps.google.com/maps?q=Kawachi-Katakami+Station,+Kashiwara,+Osaka,+Japan&t=&z=16&ie=UTF8&iwloc=&output=embed"
             class="w-full h-60 sm:h-96 border-0"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -364,13 +247,89 @@
       </div>
     </section>
 
-    <!-- Discover Kashiwara Callout Button Linking to Standalone Page -->
+    <!-- Single Unified Terms & Details Section (Includes all Space, Commute, Privacy & Flexible Terms info) -->
+    <section id="specs" class="bg-white border-y border-stone-200/80 py-8 sm:py-12">
+      <div class="max-w-5xl mx-auto px-3.5 sm:px-6">
+        <div class="mb-5 sm:mb-6">
+          <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Property Summary</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-ink mt-1">Aotani Apartment — Terms &amp; Details</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
+          <div class="rounded-xl bg-washi border border-stone-200/80 p-4 space-y-3">
+            <div>
+              <div class="text-xs font-semibold text-muted">Availability</div>
+              <div class="font-semibold text-cedar">Available Now (Immediate Move-In)</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Location</div>
+              <div class="font-medium text-ink">Aotani, Kashiwara City, Osaka Prefecture (approx. 100m from JR Kawachi-Katakami Station)</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Space &amp; Layout</div>
+              <div class="font-medium text-ink">85 m² (915 sq ft) 2-story apartment (1F: kitchen with IH stove, living room, modern unit bath, entrance hall; 2F: 2 separate medium bedrooms + 2 smaller adjoining rooms). Ideal for 2 people sharing or a home office.</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Station &amp; Commute</div>
+              <div class="font-medium text-ink">1-minute walk (approx. 100m) to <strong>JR Kawachi-Katakami Station (JR Yamatoji Line)</strong> — approx. 32 mins to Tennoji, approx. 40 mins direct to JR Namba, approx. 55 mins to Osaka/Umeda, approx. 7 mins direct to Oji, and approx. 15 mins to Kawachi-Kokubu.</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Privacy &amp; Building</div>
+              <div class="font-medium text-ink">No other tenants in the building. Renovated half of a former university dorm; the other half is our rarely accessed storeroom.</div>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-washi border border-stone-200/80 p-4 space-y-3">
+            <div>
+              <div class="text-xs font-semibold text-muted">Monthly Rent &amp; Contract</div>
+              <div class="font-semibold text-ink">¥50,000 / month + utilities (Sharing OK — ¥25,000 / month per person for 2 people; ¥0 management fee)</div>
+              <div class="font-medium text-ink mt-1">Month-to-month or 1-year contract (30-day notice).</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Upfront Move-In Costs</div>
+              <div class="font-medium text-ink">1-month refundable security deposit (¥50,000) ONLY — <strong>¥0 Key Money, ¥0 Brokerage Fee, ¥0 Guarantor Fee</strong>.</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Pets, Furnishing &amp; Internet</div>
+              <div class="font-medium text-ink"><strong>Pets OK with conditions.</strong> Semi-furnished appliances (fridge, washing machine, AC, IH stove) provided as-is. Fixed-line internet available upon request.</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Shopping &amp; Restaurants</div>
+              <div class="font-medium text-ink">Aotani is a quiet rural area with no shops or restaurants immediately next to the apartment. The closest hub is <strong>Oji, Nara</strong> (search "Oji Nara", not Oji Tokyo)—a pleasant regional center with supermarkets, shops, and restaurants just 2 stops (approx. 7 mins) away on the JR Yamatoji Line, with regular trains from early morning to late evening (approx. 3–7 trains/hour). <strong>Kawachi-Kokubu</strong> is also easily reached in the opposite direction (approx. 15 mins via Takaida + walk, by bicycle, or via Kashiwara's free weekday Kirameki loop bus) for additional supermarkets and dining.</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Living in Japan</div>
+              <div class="font-medium text-ink">If you are unfamiliar with Japan, we are happy to assist with house-related matters like paying bills and garbage disposal, and can provide general advice on living in Japan.</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-muted">Owner &amp; Parking</div>
+              <div class="font-medium text-ink">Direct owners (foreigners welcome). Paid monthly parking available directly across the street at Aotani Golf Garden.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Conditions for Rent Callout -->
+    <section class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-8 sm:pt-10">
+      <div class="bg-white rounded-2xl border border-stone-200 p-4 sm:p-6 shadow-sm space-y-2.5">
+        <div>
+          <a href="conditions-for-rent-apartment.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-cedar hover:bg-cedarDark text-white font-semibold text-xs sm:text-sm transition-colors">Conditions for Rent →</a>
+        </div>
+        <p class="text-xs sm:text-sm text-muted leading-relaxed">
+          There are conditions for renting this apartment. If you are interested, please have a look at the Conditions for Rent.
+        </p>
+      </div>
+    </section>
+
+    <!-- Discover Kashiwara Callout -->
     <section class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-6 sm:pt-12 pb-2 sm:pb-4">
       <div class="bg-cedar text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6">
-        <div class="space-y-2 max-w-2xl">
-          <div class="text-xs font-semibold uppercase tracking-wider text-emerald-200">Local Area Guide · 柏原市エリアガイド</div>
-          <h2 class="text-2xl font-bold leading-snug">Discover Kashiwara — Countryside Living Close to Osaka</h2>
-          <p class="text-sm text-emerald-50/90 leading-relaxed">
+        <div class="space-y-1.5 max-w-2xl">
+          <h2 class="text-2xl sm:text-3xl font-bold leading-snug">Local Area Guide</h2>
+          <div class="text-sm sm:text-base font-semibold text-emerald-200">Discover the area around the apartment</div>
+          <p class="text-xs sm:text-sm text-emerald-50/90 leading-relaxed">
             Explore green mountain trails, car-free cycling routes to Oji and Kawachi-Kokubu supermarkets, nearby parks, and official Kashiwara City guides.
           </p>
         </div>
@@ -384,13 +343,10 @@
     <section id="contact" class="max-w-5xl mx-auto px-3.5 sm:px-6 pt-6 pb-10 sm:pt-8 sm:pb-16">
       <div class="bg-white rounded-2xl sm:rounded-3xl border border-stone-200 p-4 sm:p-10 shadow-sm grid md:grid-cols-12 gap-5 sm:gap-8 items-center">
         <div class="md:col-span-7 space-y-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Direct Owner Contact · お問い合わせ</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-ink">Interested in Aotani Apartment?</h2>
+          <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Direct Owner Contact</span>
+          <h2 class="text-xl sm:text-3xl font-bold text-ink">Interested in Aotani Apartment?</h2>
           <p class="text-sm sm:text-base text-muted leading-relaxed">
             Message Andrew (English) or Yuki (Japanese) directly—no real estate agency middleman. Applying from outside Kansai or overseas? We happily arrange live <strong>virtual tours via LINE, WhatsApp, Zoom, or Google Meet</strong>.
-          </p>
-          <p class="text-xs text-muted">
-            When emailing, please share a quick note on who will be living in the apartment, your approximate move-in date, whether you have any pets, and if you'd like an in-person or virtual viewing.
           </p>
         </div>
 
@@ -427,39 +383,29 @@
 
   <footer class="border-t border-stone-200 bg-sand/50 py-8 text-center text-xs text-muted px-4">
     <div class="max-w-5xl mx-auto space-y-1">
-      <div class="font-semibold text-ink">Kansai Country Rental · Aotani, Kashiwara-shi, Osaka (大阪府柏原市青谷)</div>
-      <div>Direct-from-owner bilingual rentals near JR Kawachi-Katakami Station (JR大和路線 河内堅上駅)</div>
+      <div class="font-semibold text-ink">Kansai Country Rental · Aotani, Kashiwara-shi, Osaka</div>
+      <div>Direct-from-owner rentals near JR Kawachi-Katakami Station (JR Yamatoji Line)</div>
     </div>
   </footer>
 
-  <!-- Full-Screen Photo Lightbox Modal -->
   <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Photo viewer">
-    <button id="lightboxClose" type="button" aria-label="Close gallery" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl">
-      &times;
-    </button>
-    <button id="lightboxPrev" type="button" aria-label="Previous photo" class="absolute left-3 sm:left-6 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg">
-      &#8592;
-    </button>
+    <button id="lightboxClose" type="button" aria-label="Close gallery" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl">&times;</button>
+    <button id="lightboxPrev" type="button" aria-label="Previous photo" class="absolute left-3 sm:left-6 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg">&#8592;</button>
     <div class="max-w-4xl w-full flex flex-col items-center gap-3">
       <img id="lightboxImg" src="" alt="" class="max-h-[78vh] max-w-full rounded-xl object-contain bg-black/40" />
       <div id="lightboxCaption" class="text-sm text-white/90 font-medium text-center px-4"></div>
     </div>
-    <button id="lightboxNext" type="button" aria-label="Next photo" class="absolute right-3 sm:right-6 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg">
-      &#8594;
-    </button>
+    <button id="lightboxNext" type="button" aria-label="Next photo" class="absolute right-3 sm:right-6 w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg">&#8594;</button>
   </div>
 
-  <!-- Toast Notification -->
-  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2.5 rounded-xl bg-ink text-white text-xs sm:text-sm font-medium shadow-lg">
-    Copied aotani.andrew@gmail.com to clipboard
-  </div>
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2.5 rounded-xl bg-ink text-white text-xs sm:text-sm font-medium shadow-lg">Copied aotani.andrew@gmail.com to clipboard</div>
 
   <script>
     (function () {
       const photoCaptions = [
         'Aotani Apartment — Bright 2F landing & staircase',
         '1F Kitchen — Functional cooking area with IH stove',
-        '1F Living Room — Spacious ground-floor living area (44 m²)',
+        '1F Living Room — Spacious ground-floor living area',
         '1F Bathroom — Clean modern unit bath & shower',
         '1F Toilet — Private bathroom facility',
         '2F Bedroom 1 — Bright upstairs bedroom (separate room for sharing or office)',
@@ -467,45 +413,17 @@
         '2F Japanese-style Tatami Room — Adjoining bright flex space',
         'Aotani Apartment — Exterior in quiet Kashiwara foothills',
         'Green mountain views surrounding Aotani, Kashiwara',
-        'Floor Plan — 1F (44 m²) and 2F (41 m²), total 85 m² (915 sq ft)'
+        'Floor Plan — 1F and 2F, total 85 m² (915 sq ft)'
       ];
       const photos = photoCaptions.map(function (caption, idx) {
         const imgEl = document.querySelector('#photos [data-photo-index="' + idx + '"] img');
         return { src: imgEl ? imgEl.src : '', caption: caption };
       });
-
       let currentPhoto = 0;
 
       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
       const mobileMenu = document.getElementById('mobileMenu');
-      mobileMenuBtn.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
-      });
-
-      const modeSoloBtn = document.getElementById('modeSoloBtn');
-      const modeShareBtn = document.getElementById('modeShareBtn');
-      const rentHeadline = document.getElementById('rentHeadline');
-      const rentUnit = document.getElementById('rentUnit');
-      const rentNote = document.getElementById('rentNote');
-
-      function setMode(mode) {
-        if (mode === 'share') {
-          modeShareBtn.className = 'px-3 py-1.5 rounded-md bg-cedar text-white shadow-sm transition-all';
-          modeSoloBtn.className = 'px-3 py-1.5 rounded-md text-muted hover:text-ink transition-all';
-          rentHeadline.textContent = '¥25,000';
-          rentUnit.textContent = '/ person · month (2 sharing)';
-          rentNote.textContent = 'Split between 2 friends or coworkers (¥50,000 total/month). Move-in upfront: ¥25,000 first month + ¥25,000 refundable deposit per person (¥0 key money, ¥0 brokerage, ¥0 guarantor).';
-        } else {
-          modeSoloBtn.className = 'px-3 py-1.5 rounded-md bg-cedar text-white shadow-sm transition-all';
-          modeShareBtn.className = 'px-3 py-1.5 rounded-md text-muted hover:text-ink transition-all';
-          rentHeadline.textContent = '¥50,000';
-          rentUnit.textContent = '/ month + utilities';
-          rentNote.textContent = 'Total apartment rent: ¥50,000/month. Move-in upfront: ¥50,000 first month + ¥50,000 refundable deposit (¥0 key money, ¥0 brokerage, ¥0 guarantor).';
-        }
-      }
-
-      modeSoloBtn.addEventListener('click', function () { setMode('solo'); });
-      modeShareBtn.addEventListener('click', function () { setMode('share'); });
+      mobileMenuBtn.addEventListener('click', function () { mobileMenu.classList.toggle('hidden'); });
 
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = document.getElementById('lightboxImg');
@@ -513,32 +431,21 @@
 
       function showPhoto(index) {
         currentPhoto = (index + photos.length) % photos.length;
-        const item = photos[currentPhoto];
-        lightboxImg.src = item.src;
-        lightboxImg.alt = item.caption;
-        lightboxCaption.textContent = (currentPhoto + 1) + ' / ' + photos.length + ' — ' + item.caption;
+        lightboxImg.src = photos[currentPhoto].src;
+        lightboxImg.alt = photos[currentPhoto].caption;
+        lightboxCaption.textContent = (currentPhoto + 1) + ' / ' + photos.length + ' — ' + photos[currentPhoto].caption;
         lightbox.classList.remove('hidden');
       }
-
-      function closeLightbox() {
-        lightbox.classList.add('hidden');
-      }
+      function closeLightbox() { lightbox.classList.add('hidden'); }
 
       document.querySelectorAll('[data-photo-index]').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          showPhoto(parseInt(btn.getAttribute('data-photo-index'), 10));
-        });
+        btn.addEventListener('click', function () { showPhoto(parseInt(btn.getAttribute('data-photo-index'), 10)); });
       });
-
-      document.getElementById('openFloorplanBtn').addEventListener('click', function () {
-        showPhoto(10);
-      });
+      document.getElementById('openFloorplanBtn').addEventListener('click', function () { showPhoto(10); });
       document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
       document.getElementById('lightboxPrev').addEventListener('click', function () { showPhoto(currentPhoto - 1); });
       document.getElementById('lightboxNext').addEventListener('click', function () { showPhoto(currentPhoto + 1); });
-      lightbox.addEventListener('click', function (e) {
-        if (e.target === lightbox) closeLightbox();
-      });
+      lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
       document.addEventListener('keydown', function (e) {
         if (lightbox.classList.contains('hidden')) return;
         if (e.key === 'Escape') closeLightbox();
@@ -549,30 +456,13 @@
       const copyEmailBtn = document.getElementById('copyEmailBtn');
       const toast = document.getElementById('toast');
       let toastTimer = null;
-
       function showToast(msg) {
         toast.textContent = msg;
         toast.classList.remove('hidden');
         toast.classList.add('toast-enter');
         if (toastTimer) clearTimeout(toastTimer);
-        toastTimer = setTimeout(function () {
-          toast.classList.add('hidden');
-        }, 2500);
+        toastTimer = setTimeout(function () { toast.classList.add('hidden'); }, 2500);
       }
-
-      copyEmailBtn.addEventListener('click', function () {
-        const email = 'aotani.andrew@gmail.com';
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(email).then(function () {
-            showToast('Copied ' + email + ' to clipboard');
-          }).catch(function () {
-            fallbackCopy(email);
-          });
-        } else {
-          fallbackCopy(email);
-        }
-      });
-
       function fallbackCopy(text) {
         const ta = document.createElement('textarea');
         ta.value = text;
@@ -580,14 +470,16 @@
         ta.style.opacity = '0';
         document.body.appendChild(ta);
         ta.select();
-        try {
-          document.execCommand('copy');
-          showToast('Copied ' + text + ' to clipboard');
-        } catch (err) {
-          showToast('Email: ' + text);
-        }
+        try { document.execCommand('copy'); showToast('Copied ' + text + ' to clipboard'); }
+        catch (err) { showToast('Email: ' + text); }
         document.body.removeChild(ta);
       }
+      copyEmailBtn.addEventListener('click', function () {
+        const email = 'aotani.andrew@gmail.com';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(function () { showToast('Copied ' + email + ' to clipboard'); }).catch(function () { fallbackCopy(email); });
+        } else { fallbackCopy(email); }
+      });
     })();
   </script>
 </body>

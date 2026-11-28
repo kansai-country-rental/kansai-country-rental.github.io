@@ -6,25 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['Inter', 'Noto Sans JP', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            washi: '#FAF8F4',
-            sand: '#F1ECE3',
-            cedar: '#1F4E3D',
-            cedarDark: '#16382C',
-            moss: '#3A6B56',
-            clay: '#C26D4A',
-            ink: '#1E2421',
-            muted: '#5A6560',
-          }
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: { washi: '#FAF8F4', sand: '#F1ECE3', cedar: '#1F4E3D', cedarDark: '#16382C', moss: '#3A6B56', clay: '#C26D4A', ink: '#1E2421', muted: '#5A6560' }
         }
       }
     };
@@ -32,11 +21,10 @@
   <style>
     html { scroll-behavior: smooth; }
     body { background-color: #FAF8F4; color: #1E2421; }
+    .photo-card img { transition: transform 0.35s ease; }
+    .photo-card:hover img { transform: scale(1.03); }
     .toast-enter { animation: fadeSlideUp 0.25s ease forwards; }
-    @keyframes fadeSlideUp {
-      from { opacity: 0; transform: translate(-50%, 10px); }
-      to { opacity: 1; transform: translate(-50%, 0); }
-    }
+    @keyframes fadeSlideUp { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
   </style>
   <title>Inquire / Contact — Kansai Country Rental</title>
   <meta name="description" content="Contact Andrew (English) or Yuki (Japanese) directly regarding Kansai Country Rental properties in Kashiwara-shi and Yao-shi, Osaka. In-person and virtual viewings available." />
@@ -56,7 +44,7 @@
         <nav class="hidden md:flex items-center gap-2.5">
           <a href="aotani-apartment.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Aotani Apartment</a>
           <a href="discover-kashiwara.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedar hover:bg-cedarDark">Discover Kashiwara</a>
-          <a href="inquire.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedarDark ring-2 ring-cedar/30">Inquire / 問合せ</a>
+          <a href="inquire.html" class="px-3.5 py-2 rounded-lg text-white text-sm font-medium transition-colors whitespace-nowrap bg-cedarDark ring-2 ring-cedar/30">Inquire</a>
         </nav>
         <button id="mobileMenuBtn" type="button" aria-label="Open menu" class="md:hidden p-2 rounded-lg border border-stone-300 text-ink hover:bg-sand">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -69,7 +57,7 @@
     <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-washi px-3.5 py-3 flex flex-col gap-2 text-sm font-medium shadow-sm">
       <a href="aotani-apartment.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Aotani Apartment</a>
       <a href="discover-kashiwara.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Discover Kashiwara</a>
-      <a href="inquire.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Inquire / 問合せ</a>
+      <a href="inquire.html" class="px-3.5 py-2.5 rounded-lg bg-cedar hover:bg-cedarDark text-white text-center">Inquire</a>
     </div>
   </header>
 
@@ -77,13 +65,10 @@
     <section class="max-w-5xl mx-auto px-3.5 sm:px-6 py-6 sm:py-16">
       <div class="bg-white rounded-2xl sm:rounded-3xl border border-stone-200 p-4 sm:p-10 shadow-sm grid md:grid-cols-12 gap-5 sm:gap-8 items-center">
         <div class="md:col-span-7 space-y-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Direct Owner Contact · お問い合わせ</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-cedar">Direct Owner Contact</span>
           <h1 class="text-xl sm:text-3xl font-bold text-ink">Contact Kansai Country Rental</h1>
           <p class="text-sm sm:text-base text-muted leading-relaxed">
             Message Andrew (English) or Yuki (Japanese) directly—no real estate agency middleman. Applying from outside Kansai or overseas? We happily arrange live <strong>virtual tours via LINE, WhatsApp, Zoom, or Google Meet</strong>.
-          </p>
-          <p class="text-xs sm:text-sm text-muted leading-relaxed">
-            When emailing, please share a quick note on which property you're asking about, who will be living there, your approximate move-in date, whether you have any pets, and if you'd like an in-person or virtual viewing.
           </p>
         </div>
 
@@ -120,22 +105,18 @@
 
   <footer class="border-t border-stone-200 bg-sand/50 py-8 text-center text-xs text-muted px-4">
     <div class="max-w-5xl mx-auto space-y-1">
-      <div class="font-semibold text-ink">Kansai Country Rental · Aotani, Kashiwara-shi, Osaka (大阪府柏原市青谷)</div>
-      <div>Direct-from-owner bilingual rentals near JR Kawachi-Katakami Station (JR大和路線 河内堅上駅)</div>
+      <div class="font-semibold text-ink">Kansai Country Rental · Aotani, Kashiwara-shi, Osaka</div>
+      <div>Direct-from-owner rentals near JR Kawachi-Katakami Station (JR Yamatoji Line)</div>
     </div>
   </footer>
 
-  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2.5 rounded-xl bg-ink text-white text-xs sm:text-sm font-medium shadow-lg">
-    Copied aotani.andrew@gmail.com to clipboard
-  </div>
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2.5 rounded-xl bg-ink text-white text-xs sm:text-sm font-medium shadow-lg">Copied aotani.andrew@gmail.com to clipboard</div>
 
   <script>
     (function () {
       var btn = document.getElementById('mobileMenuBtn');
       var menu = document.getElementById('mobileMenu');
-      if (btn && menu) {
-        btn.addEventListener('click', function () { menu.classList.toggle('hidden'); });
-      }
+      if (btn && menu) { btn.addEventListener('click', function () { menu.classList.toggle('hidden'); }); }
       var copyBtn = document.getElementById('copyEmailBtn');
       var toast = document.getElementById('toast');
       var toastTimer = null;
